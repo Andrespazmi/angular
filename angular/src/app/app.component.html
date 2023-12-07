@@ -1,0 +1,10 @@
+<h1 style="color:#0a0b">
+  {{ !titulo ? 'Sin titulo' : (titulo | titlecase) }}
+</h1>
+
+<div>
+  <label for="titulo">cambiar el titulo</label>
+  <input name="titulo" type="text" [(ngModel)]="titulo" />
+</div>
+
+<app-card></app-card>
